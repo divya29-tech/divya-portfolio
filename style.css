@@ -1,1 +1,362 @@
+body {
+    margin-top: 70px;
+    padding: 0px 40px;
+    
+    font-family: poppins,sans-serif;
+    background:radial-gradient(circle at top right,rgba(63, 46, 90, 0.95),
+    #1C1B22   70%);
+}
+.top-header {
+    width: 100%;
+    
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    top:0;
+    left: 0;
+    
+    z-index: 1000;
+}
+.logo-name {
+    padding-left: 50px;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+
+}
+.social-icons {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+.icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    
+
+}
+.icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    color: white;
+    z-index: 1100;
+}
+
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x:hidden;
+    transition: 0.4s ;
+    padding-top: 60px;
+    z-index: 1200;
+}
+
+
+.side-menu a {
+    padding: 15px 25px;
+    display: block;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    background: #f0f0f0;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    
+    cursor: pointer;
+}
+
+
+html {
+    scroll-behavior: smooth;
+
+}
+.skills-section {
+    padding: 40px 20px;
+    margin-top:-1500px;
+    
+    
+}
+
+.skills-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: yellow;
+    border-left: 4px slid #ffcc4d;
+    padding-left: 12px;
+}
+
+.skill-box {
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #f5f7fa;
+    padding: 12px 12px;
+    border-radius: 12px;
+    margin: 0;
+}
+.skills-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.skill-box:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    margin-right:10px;
+}
+
+.skill-box span {
+    font-size: 20px;
+    font-weight: 600;
+    color:#000;
+}
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+}
+.skills-para {
+    writing-mode: horizontal-tb;
+    transform: none;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: left;
+    max-width: 700px;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+/* Resume Section */
+.resume-section {
+  
+  text-align: center;
+}
+
+.resume-box {
+  background: #ffffff;
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.resume-box p {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+/* Light Blue Button */
+.resume-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #5dade2;   /* light blue */
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #3498db;   /* darker blue on hover */
+}
+.resume-title {
+    text-align: center;
+    color: yellow;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+/* CONTACT SECTION */
+.contact-section {
+    margin: 40px auto;
+    text-align: center;
+    margin-top:-450px;
+}
+
+/* Contact heading */
+.contact-section h2 {
+    color: #ffcc4d; /* yellow */
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Small subtitle text */
+.contact-section p {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 100px;
+    opacity: 0.9;
+}
+
+/* White contact box */
+.contact-box {
+    background: #ffffff;
+    width: 400px;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Contact links */
+.contact-box a {
+    display: block;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* Hover effect */
+.contact-box a:hover {
+    color: #0077b5; /* LinkedIn blue feel */
+}
+section {
+    min-height: 100vh;
+    padding: 80px 20px;
+    scroll-margin-top: 80px;
+}
+/* FORCE all paragraphs to be normal sentence */
+p,
+.skills-para,
+.about-section p {
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+  transform: none;
+
+  white-space: normal;
+  
+  line-height: 1.7;
+  max-width: 1200px;
+}
+/* Skills section overall */
+.skills-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+ margin-top: -1510px;
+}
+
+/* Title */
+.skills-title {
+  font-size: 36px;
+  color: yellow;
+  margin-bottom: 30px;
+}
+
+/* Container – THIS is the KEY */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* CENTER horizontally */
+  gap: 16px; /* GAP between boxes */
+ 
+}
+
+/* Each skill box */
+.skill-box {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  background: #f5f7fa;
+  padding: 14px 20px;
+  border-radius: 14px;
+  margin-bottom: -25px;
+  margin: 0 auto;  /* FORCE center */
+}
+
+/* Icon */
+.skill-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Text */
+.skill-box span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+/* FORCE GAP BETWEEN EACH SKILL BOX */
+.skill-box {
+  margin-bottom: 20px;   /* 👈 THIS IS THE KEY */
+}
+
+.contact-box p {
+  margin-bottom: 10px;   /* sentence keezha gap kammi */
+}
+
+.contact-box .contact-links {
+  margin-top: 0px;       /* links mela move aagum */
+}
+/* ===== REMOVE UNWANTED GAPS (GLOBAL FIX) ===== */
+section {
+  min-height: auto !important;
+  height: auto !important;
+  padding: 40px 16px !important;
+  margin: 0 !important;
+}
+
+/* Headings gap reduce */
+section h2 {
+  margin-bottom: 20px !important;
+}
+
+/* Paragraph gap reduce */
+section p {
+  margin-bottom: 16px !important;
+}
+
+/* Skills box spacing */
+.skills-container {
+  gap: 14px !important;
+}
 
